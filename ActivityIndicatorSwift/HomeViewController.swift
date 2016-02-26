@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
         viewActivitySmall?.spinnerColor = UIColor.blueColor()
         self.viewOuter.addSubview(viewActivitySmall!)
         viewActivitySmall?.showAndStartAnimate()
-        
+//        viewActivitySmall?.center =  CGPointMake((self.viewOuter?.frame.size.width)!/2, (self.viewOuter?.frame.size.height)!/2)
         
         
         
@@ -108,6 +108,7 @@ class HomeViewController: UIViewController {
         self.performSelector(Selector("makeSpinnerTinyOnCenter"), withObject: nil, afterDelay: 0.1)
     }
 
+    // MARK: button actions
     
     @IBAction func buttonStartAction(sender: AnyObject)
     {

@@ -64,6 +64,13 @@ class SHActivityView: UIView {
      * default = false
      */
     var disableEntireUserInteraction : Bool?
+        {
+        
+        didSet
+        {
+            UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+        }
+    }
     
     
     
@@ -197,7 +204,7 @@ class SHActivityView: UIView {
             }
         }
         
-        if(disableEntireUserInteraction == false)
+        if(disableEntireUserInteraction == true)
         {
             UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         }
@@ -384,12 +391,7 @@ class SHActivityView: UIView {
         shape.strokeColor = UIColor(white: 1.0, alpha: 1.0).CGColor
         return shape
     }
-    
-    private func setDisableEntireUserInteraction(var disableEntireUserInteraction:Bool)
-    {
-        disableEntireUserInteraction = true
-        UIApplication.sharedApplication().beginIgnoringInteractionEvents()
-    }
+
     
     @objc private func rotationAnimation()
     {
