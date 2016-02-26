@@ -108,7 +108,7 @@ class HomeViewController: UIViewController {
         self.performSelector(Selector("makeSpinnerTinyOnCenter"), withObject: nil, afterDelay: 0.1)
     }
 
-    // MARK: button actions
+    // MARK: Button actions
     
     @IBAction func buttonStartAction(sender: AnyObject)
     {
