@@ -74,6 +74,7 @@ class HomeViewController: UIViewController {
         viewActivityVeryLarge?.showAndStartAnimate()
         self.viewOuter.addSubview(viewActivityVeryLarge!)
         viewActivityVeryLarge?.frame = CGRectMake(350, 150, (viewActivityVeryLarge?.frame.size.width)!, (viewActivityVeryLarge?.frame.size.height)!)
+        
         */
     }
 
