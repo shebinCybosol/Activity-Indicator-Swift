@@ -68,7 +68,10 @@ class SHActivityView: UIView {
         
         didSet
         {
-            UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+            if(disableEntireUserInteraction == true)
+            {
+                UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+            }
         }
     }
     
